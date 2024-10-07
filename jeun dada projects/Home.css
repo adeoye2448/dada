@@ -1,0 +1,719 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    background-image: url(./assets.jeun/image\ copy\ 4.png);
+    overflow-x: hidden;
+
+}
+
+.maincontainer header{
+    width: 100vw;
+    height: auto;
+}
+
+.maincontainer header .topBar{
+   background-color: #000;
+   color: #fff;
+   font-size: 14px;
+   width: 900px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.maincontainer header .topBar span{
+    color: #fb8500;
+}
+
+.maincontainer header .navContainer{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.maincontainer header .navContainer .logo{
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+}
+
+.maincontainer header .navContainer .logo img{
+    width: 80%;
+    height: 80%;
+
+    
+}
+
+.maincontainer header .navContainer nav{
+    margin-left: 50px;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    
+}
+.maincontainer header .navContainer nav ul{
+    width: 450px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+ 
+.maincontainer header .navContainer nav #close{
+    display: none;
+}
+
+.maincontainer header .navContainer nav .B{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.maincontainer header .navContainer .cart {
+    margin-top: 60px;
+    font-size: 20px;
+    margin-left: 40px;
+    width: 20px;
+    height: 20px;
+}
+.maincontainer header .navContainer .cart #menu-btn{
+    display: none;
+}
+.maincontainer .header .image{
+    margin-top: 50px;
+    width: 40px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+}
+.maincontainer .header .nav{
+    margin-top: 40px;
+    margin-left: 100px;
+    justify-content: space-between;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+.maincontainer .header .nav .home{
+    text-decoration: none;
+    justify-content: space-between;
+    color: #000000;
+}
+.maincontainer .header .nav img{
+    width: 18px;
+    height: 0;
+}
+.maincontainer .image{
+    width: 901px;
+    height: 960px;
+}
+.maincontainer .image img{
+    width: 800px;
+    height: 800px;
+    margin-left: 610px;
+    top: 0px;
+    bottom: 800px;
+    position: absolute;
+}
+.maincontainer .text{
+    position: absolute;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 45px;
+}
+.maincontainer .text span{
+    color: #FF8801;
+}
+.maincontainer .at{
+    position: absolute;
+    top: 400px;
+    font-weight: 500;
+    margin-left: 45px;
+    font-size: large;
+}
+.maincontainer .order{
+    position: absolute;
+    top: 500px;
+    margin-left: 45px;
+}
+.maincontainer .order button{
+    width: 150px;
+    text-decoration: none;
+    font-weight: 900;
+    color: #000000;
+    background-color: #FF8801;
+    font-size: 17px;
+    border-radius: 8px;
+    height: 70px;
+    border-color: #D9D9D9;
+    color: white;
+}
+.maincontainer .order button a{
+    text-decoration: none;
+    color: white;
+}
+
+.maincontainer article{ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+ 
+
+.maincontainer article .shop {
+   width:  70%;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    
+}
+
+.maincontainer article .shop h2{
+    font-weight: 800;
+}
+
+
+.maincontainer article .shop .byCategories{
+    border: 0 solid;
+    height: 70%;
+    background-color:  #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.maincontainer article .shop .byCategories .foodChoice{
+    border: 3px solid #fb8500;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    font-size: 0;
+}
+.maincontainer article .shop .byCategories .foodChoice .chefHat{
+    width:60px; 
+    margin-top: 30px;
+}
+.maincontainer article .shop .byCategories .foodChoice a{
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.maincontainer article .shop .byCategories .foodChoice p{
+    font-size: 15px;
+}
+
+.maincontainer article .hotTrendImages{
+    margin-top: 100px ;
+    width:  70%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article .hotTrendImages h2{
+    font-weight: 800;
+}
+
+article .hotTrendImages .mealTypes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.maincontainer article .hotTrendImages .mealTypes .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.maincontainer article .hotTrendImages .mealTypes .container .imgContainer{
+    height: 250px;
+    width: 250px;
+}
+
+.maincontainer article .hotTrendImages .mealTypes .container .imgContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.maincontainer article .hotTrendImages .mealTypes .container .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.maincontainer article .hotTrendImages .mealTypes .container .content p{
+    color: #fb8500;
+}
+.maincontainer .jumia{
+    margin-top:80px;
+}
+.maincontainer .jumia img{
+    width: 100%;
+    height: 100%;
+}
+.maincontainer .footer{
+    margin-top: 100px;
+    background-color: #000000;
+    height: 570px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.maincontainer .footer img{
+    color: white;
+    margin-left: 120px;
+    margin-top: 120px;
+}
+.maincontainer .footer p{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 80px;
+}
+.maincontainer .footer .visa{
+    margin-bottom: 60px;
+}
+.maincontainer .footer .quick{
+    margin-left: 100px;
+    margin-top: 80px;
+    font-size: 30px;
+}
+.maincontainer .footer .quick .tag{
+    font-size: 15px;
+    margin-top: 80px;
+}
+.maincontainer .footer .quick .copy{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 120px;
+}
+.maincontainer .footer .news{
+    margin-left: 70px;
+    margin-top: 80px;
+    font-size: 30px;
+}
+.maincontainer .footer .news .to{
+    font-size: 15px;
+}
+.maincontainer .footer .news .form{
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    font-size: 0;
+    background-color: #fb8500;
+    color: #000000;
+    font-weight: 900;
+    margin-left: 120px;
+    margin-top: 50px;
+}  
+.maincontainer .footer .form button{
+    padding: 8px;
+    background-color: #fb8500;
+} 
+.maincontainer .footer .news .privacy{
+    font-size: 15px;
+    margin-top: 140px;
+    margin-left: 160px;
+}
+
+@media(max-width:500px){
+    body{
+        width: 365px;
+        height: 100%;
+        overflow-x: hidden;
+        background-image: url(./assets.jeun/image\ copy\ 4.png);
+        background-color: white;   
+    }
+    
+    .maincontainer header{
+        width: 100vw;
+        height: 100%;
+    }
+    
+    .maincontainer header .topBar{
+       background-color: #000;
+       color: #fff;
+       font-size: 9px;
+       width: 360px;
+       height: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+    }
+    .maincontainer header .topBar span{
+        color: #fb8500;
+    }
+    
+    .maincontainer header .navContainer{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .maincontainer header .navContainer .logo{
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .maincontainer header .navContainer .logo img{
+        width: 80%;
+        height: 80%;   
+    }
+    
+    .maincontainer header .navContainer nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 5px;
+        width: 50%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 5;
+        
+    }
+    .maincontainer header .navContainer nav ul{
+        width: 100%;
+        height: 300px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+     
+    .maincontainer header .navContainer nav #close{
+        display: flex;
+        margin-left: 150px;
+        font-size: 20px;
+    }
+    
+    .maincontainer header .navContainer nav .B{
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+    }
+    
+    .maincontainer header .navContainer .cart {
+        margin-top: 20px;
+        margin-left: 140px;
+        width: 0;
+        height: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        font-size: 30px;
+
+    }
+    .maincontainer header .navContainer .cart #menu-btn{
+        display: flex;
+        flex-direction: row;
+        width: 20px;
+        height: 20px;
+        font-size: 30px;
+    }
+    .maincontainer .header .image{
+        margin-left: 45px;
+        margin-top: 50px;
+        width: 69px;
+        height: 54px;
+        display: flex;
+        flex-direction: row;
+    }
+    .maincontainer .header .nav{
+        margin-top: 40px;
+        margin-left: 100px;
+        justify-content: space-between;
+        gap: 50px;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .maincontainer .header .nav .home{
+        text-decoration: none;
+        justify-content: space-between;
+        color: #000000;
+    }
+    .maincontainer .header .nav img{
+        width: 24px;
+        height: 24px;
+    }
+    .maincontainer .image img{
+        width: 179px;
+        height: 280px;
+        margin-left: 180px;
+        top: 40px;
+        bottom: 800px;
+        position: absolute;
+        z-index: -3;
+    }
+    .maincontainer .text{
+        position: absolute;
+        top: 180px;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 5px;
+    }
+    .maincontainer .text span{
+        color: #FF8801;
+    }
+    .maincontainer .at{
+        position: absolute;
+        top: 240px;
+        font-weight: 400;
+        margin-left: 5px;
+        font-size: 7px;
+    }
+    .maincontainer .order{
+        position: absolute;
+        top: 280px;
+        margin-left: 5px;
+
+    }
+    .maincontainer .order button{
+        width: 100px;
+        text-decoration: none;
+        font-weight: 700;
+        color: #000000;
+        background-color: #FF8801;
+        font-size: 14px;
+        border-radius: 10px;
+        border-color: white;
+        color: white;
+        height: 50px;
+    }
+    .maincontainer .order a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .maincontainer article{
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: absolute;
+    top: 450px;
+}
+ 
+
+.maincontainer article .shop {
+   width:  100%;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+}
+
+.maincontainer article .shop h2{
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+
+.maincontainer article .shop .byCategories{
+    border: 1px solid;
+    height: 360px;
+    background-color:  #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 340px;
+    margin-top: 30px;
+}
+
+.maincontainer article .shop .byCategories .foodChoice{
+    border: 3px solid #fb8500;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 0;
+    gap: 0;
+    justify-content: center;
+}
+.maincontainer article .shop .byCategories .foodChoice a{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+.maincontainer article .shop .byCategories .foodChoice .chefHat{
+    width: 40px;
+}
+
+.maincontainer article .shop .byCategories .foodChoice p{
+    font-size: 11px;
+}
+
+.maincontainer article .hotTrendImages{
+    width:  100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+article .hotTrendImages h2{
+    font-weight: 500;
+}
+
+article .hotTrendImages .mealTypes{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 600px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.maincontainer article .hotTrendImages .mealTypes .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.maincontainer article .hotTrendImages .mealTypes .container .imgContainer{
+    height: 140px;
+    width: 140px;
+    gap: 0;
+}
+
+.maincontainer article .hotTrendImages .mealTypes .container .imgContainer img{
+    width: 90%;
+    height: 90%;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.maincontainer article .hotTrendImages .mealTypes .container .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.maincontainer article .hotTrendImages .mealTypes .container .content p{
+    color: #fb8500;
+}
+.maincontainer .jumia{
+    margin-top:350px;
+}
+.maincontainer .jumia img{
+    width: 357px;
+    height: 100%;
+}
+.maincontainer .footer{
+    border: dashed;
+    margin-top: 80px;
+    background-color: #000000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.maincontainer .footer img{
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.maincontainer .footer p{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.maincontainer .footer .quick{
+    margin-top: 0;
+    font-size: 18px;
+    margin-left: 0;
+}
+.maincontainer .footer .quick .tag{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.maincontainer .footer .quick .copy{
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-top: 20px;
+}
+.maincontainer .footer .news{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 0;
+}
+.maincontainer .footer .news .to{
+    font-size: 15px;
+}
+.maincontainer .footer .news .form{
+    width: 256px;
+    display: flex;
+    flex-direction: row;
+    font-size: 0;
+    background-color: #fb8500;
+    color: #000000;
+    font-weight: 900;
+    margin-left: 50px;
+    margin-top: 20px;
+}  
+.maincontainer .footer .form button{
+    padding: 9px;
+    background-color: #fb8500;
+    width: 150px;
+    border-color: #000000;
+} 
+.maincontainer .footer .news .privacy{
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+}

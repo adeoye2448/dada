@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeun Dada</title>
+    
+    <link rel="shortcut icon" href="./Group 14.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@400;900&family=Roboto:wght@300;400&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/76d27a89aa.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header .topBar{
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    width: 1300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+header .topBar span{
+     color: #fb8500;
+ }
+ 
+  header .navContainer{
+     display: flex;
+     flex-direction: row;
+     background-color: #F8F8FF;
+    
+ }
+ 
+  header .navContainer .logo{
+     margin-top: 30px;
+     width: 80px;
+     height: 80px;
+     margin-left: 120px;
+
+ }
+ 
+  header .navContainer .logo img{
+     width: 90%;
+     height: 70%;
+     margin-left: 60px;
+ }
+ 
+  header .navContainer nav{
+     margin-left:140px;
+     width:500px;
+     height: 25px;
+     display: flex;
+     flex-direction: row;
+     margin-top: 50px;
+
+     
+ }
+  header .navContainer nav ul{
+    margin-left: 150px;
+     width: 500px;
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ 
+  
+  header .navContainer nav #close{
+     display: none;
+ }
+ 
+  header .navContainer nav .B{
+     text-decoration: none;
+     color: #000;
+     font-weight: 600;
+ }
+ 
+  header .navContainer .cart {
+     margin-top: 50px;
+     font-size: 20px;
+     margin-left: 170px;
+     width: 50px;
+     height: 50px;
+ }
+  header .navContainer .cart #menu-btn{
+     display: none;
+ }
+  .header .image{
+     margin-left: 45px;
+     margin-top: 20px;
+     width: 69px;
+     height: 54px;
+     display: flex;
+     flex-direction: row;
+ }
+  .header .nav{
+     margin-top: 40px;
+     margin-left: 100px;
+     justify-content: space-between;
+     gap: 20px;
+     display: flex;
+     flex-direction: row;
+ 
+ }
+  .header .nav .home{
+     text-decoration: none;
+     justify-content: space-between;
+     color: #000000;
+ }
+  .header .nav img{
+     width: 24px;
+     height: 24px;
+ }
+ .header .cart{
+    margin-left: 150px;
+    background-color: #F8F8FF;
+ }
+ 
+.hero img{
+    width: 1280px;
+    height: 800px;
+    
+ }
+ .hero h1{
+    position: absolute;
+    top: 320px;
+    color: white;
+    left: 400px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+    font-size: 35px;
+ }
+ .section{
+    display: flex;
+    flex-direction: row;
+ }
+ .section .container{
+    border-radius: 175px;
+    height: 350px;
+    width:350px;
+    margin-left: 80px;
+    background-color: #E65C0F;
+    display: flex;
+    flex-direction: row;
+ }
+ .section img{
+    margin-left: 20px;
+    margin-top: 10px;
+ }
+ .section .text{
+    margin-top: 100px;
+    margin-left: 150px;
+ }
+ 
+ .data .blog{
+    position: absolute;
+    top: 1500px;
+    z-index: -3;
+    height: 240px;
+ }
+
+ .data .pic{
+    width: 855px;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 185px;
+  
+ }
+ .data .pic img{
+    width: 50px;
+    height: 50px;
+ }
+ .data .no{
+    width: 865px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 190px;
+    font-size: 45px;
+    font-weight: 800;
+ }
+ .data .state{
+    width: 875px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 190px;
+    font-size:20px;
+    font-weight: 600;
+ }
+ .gallery{
+    margin-top:18;
+ }
+ .gallery h2{
+    margin-left: 500px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #FF5D01;
+    margin-top: 180px;
+ }
+ .gallery .go{
+    width: 15%;
+    height: 600px;
+ }
+ .gallery .men{
+    width: 100%;
+    height: 600px;
+ }
+ .gallery .why{
+    width: 100%;
+    height: 600px;
+ }
+ .client h2{
+    margin-left: 500px;
+    margin-top: 120px;
+    font-size: 30px;
+    font-weight: 600;
+ }
+ .client .say{
+    display: flex;
+    flex-direction: row;
+ }
+ .client .say img{
+    width: 100px;
+    height: 100px;
+    margin-left: 420px;
+    margin-top: 50px;
+ }
+ .client .say .image{
+    margin-left: 30px;
+    border: dashed;
+    width: 350px;
+    height: 180px;
+    color:  #F8F8FF;
+ }
+ .client .say p{
+    margin-top: 80px;
+    margin-left: 50px;
+ }
+ .client .button{
+    width: 80px;
+    height: 14px;
+    margin-left: 600px;
+ }
+ .footer{
+   margin-top: 150px;
+   background-color: #000000;
+   height: 570px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+}
+.footer img{
+   width: 80px;
+   height: 60px;
+   color: white;
+   margin-left: 120px;
+   margin-top: 160px;
+}
+.footer p{
+   color: white;
+   display: flex;
+   flex-direction: column;
+   margin-left: 120px;
+   margin-top: 80px;
+}
+.footer .visa{
+   margin-top: 60px;
+    width: 220px;
+    height: 50px;
+}
+.footer .quick{
+   margin-left: 100px;
+   margin-top: 100px;
+   font-size: 30px;
+}
+.footer .quick .tag{
+   font-size: 15px;
+   margin-top: 80px;
+}
+.footer .quick .copy{
+   font-size: 15px;
+   display: flex;
+   flex-direction: row;
+   color: white;
+   margin-top: 120px;
+}
+.footer .news{
+   margin-left: 2px;
+   margin-top: 100px;
+   font-size: 30px;
+}
+.footer .news .to{
+   font-size: 15px;
+   margin-left: 120px;
+}
+.footer .news .form{
+   width: 230px;
+   display: flex;
+   flex-direction: row;
+   font-size: 10px;
+   background-color: #fb8500;
+   color: #000000;
+   font-weight: 900;
+   margin-left: 110px;
+   margin-top: 50px;
+}  
+.footer .form button{
+   padding: 8px;
+   background-color: #fb8500;
+} 
+.footer .news .privacy{
+   font-size: 15px;
+   margin-top: 120px;
+   margin-left: 220px;
+}
+
+@media(max-width:500px){
+    body{
+        width: 100vw;
+        height: 100%;
+        overflow-x: hidden;
+        background-color: white;
+    }
+    
+    header .topBar{
+        background-color: #000;
+        color: #fff;
+        font-size: 9px;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    header .topBar span{
+         color: #fb8500;
+     }
+     
+      header .navContainer{
+         display: flex;
+         flex-direction: row;
+         background-color: #F8F8FF;
+        
+     }
+     
+      header .navContainer .logo{
+         margin-top: 30px;
+         width: 50px;
+         height: 60px;
+         margin-left: 10px;
+    
+     }
+     
+      header .navContainer .logo img{
+         width: 90%;
+         height: 70%;
+     }
+     
+      header .navContainer nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 5px;
+        width: 50%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 5;
+        
+    
+         
+     }
+      header .navContainer nav ul{
+         width: 100%;
+         height: 300px;
+         list-style: none;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         margin-left: 5px;
+     }
+     
+      
+      header .navContainer nav #close{
+         display: flex;
+         margin-left: 150px;
+         font-size: 20px;
+     }
+     
+      header .navContainer nav .B{
+         text-decoration: none;
+         color: #000;
+         font-weight: 600;
+     }
+     
+      header .navContainer .cart {
+        margin-top: 30px;
+        margin-left: 180px;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        font-size: 25px;
+     }
+      header .navContainer .cart #menu-btn{
+        display: flex;
+        flex-direction: row;
+        width: 20px;
+        height: 20px;
+        font-size: 25px;
+     }
+      .header .image{
+         margin-left: 45px;
+         margin-top: 20px;
+         width: 69px;
+         height: 54px;
+         display: flex;
+         flex-direction: row;
+     }
+      .header .nav{
+         margin-top: 40px;
+         margin-left: 100px;
+         justify-content: space-between;
+         gap: 20px;
+         display: flex;
+         flex-direction: row;
+     
+     }
+      .header .nav .home{
+         text-decoration: none;
+         justify-content: space-between;
+         color: #000000;
+     }
+      .header .nav img{
+         width: 24px;
+         height: 24px;
+     }
+     .header .cart{
+        margin-left: 150px;
+        background-color: #F8F8FF;
+     }
+     
+    .hero img{
+        width: 100%;
+        height: 400px;
+        
+     }
+     .hero h1{
+        position: absolute;
+        top: 260px;
+        color: white;
+        left: 50px;
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        text-align: center;
+        font-size: 18px;
+     }
+     .section{
+        display: flex;
+        flex-direction: row;
+        border: dashed white;
+     }
+     .section .container{
+        border-radius: 175px;
+        height: 100px;
+        width:100px;
+        margin-left: 20px;
+        background-color: #E65C0F;
+        display: flex;
+        flex-direction: row;
+     }
+     .section img{
+        margin-left: 10px;
+        margin-top: 4px;
+     }
+     .section .text{
+        margin-top: 15px;
+        margin-left: 25px;
+        font-size: 10px;
+     }
+     
+     .data .blog{
+        position: absolute;
+        top: 800px;
+        z-index: -3;
+        height: 150px;
+        width: 350px;
+     }
+     .data .blog img{
+      width: 100%;
+      height: 100%;
+      
+     }    
+     .data .pic{
+        width: 245px;
+        margin-top: 175px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 46px;
+      
+     }
+     .data .pic img{
+        width: 30px;
+        height: 30px;
+     }
+     .data .no{
+        width: 240px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 50px;
+        font-size: 25px;
+        font-weight: 800;
+     }
+     .data .state{
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 40px;
+        font-size: 16px;
+        font-weight: 500;
+     }
+     .gallery{
+    margin-top: 18px;
+     }
+     .gallery h2{
+        margin-left: 80px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #FF5D01;
+        margin-top: 120px;
+     }
+     .gallery img{
+        width: 100%;
+        height: 100%;
+     }
+     .client h2{
+        margin-left: 80px;
+        margin-top: 120px;
+        font-size: 20px;
+        font-weight: 600;
+     }
+     .client .say{
+        display: flex;
+        flex-direction: row;
+     }
+     .client .say img{
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        margin-top: 50px;
+     }
+     .client .say .image{
+      border: dashed;
+        margin-left: 30px;
+        border: dashed;
+        width: 280px;
+        height: 150px;
+        color:  #F8F8FF;
+     }
+     .client .say p{
+        margin-top: 70px;
+        margin-left: 15px;
+        font-size: 12px;
+     }
+     .client .button{
+        width: 60px;
+        height: 14px;
+        margin-left: 130px;
+     }
+    
+     .footer{
+        margin-top: 90px;
+        background-color: #000000;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer img{
+        width: 80px;
+        height: 60px;
+        color: white;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    .footer p{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    .footer .visa{
+        margin-top: 30px;
+         width: 220px;
+         height: 50px;
+    }
+    .footer .quick{
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .footer .quick .tag{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .footer .quick .copy{
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        margin-top: 50px;
+    }
+    .footer .news{
+        margin-left: 10px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .footer .news .to{
+      margin-left: 50px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .footer .news .form{
+        width: 256px;
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        background-color: #fb8500;
+        color: #000000;
+        font-weight: 900;
+        margin-left: 50px;
+        margin-top: 30px;
+    }  
+    .footer .form button{
+        padding: 12px;
+        background-color: #fb8500;
+    } 
+    .footer .news .privacy{
+        font-size: 15px;
+        margin-top: 70px;
+        margin-left: 130px;
+    }
+}
+
+    </style>
+</head>
+<body>
+        <header>
+            <div class="topBar">
+                <span>ALERT:</span> 10% DISCOUNT FOR ALL PURCHASES IN THE MONTH OF JU...
+            </div>
+    
+    
+            <div class="navContainer">
+                <div class="logo">
+                    <img src="./Group 14.png" alt="">
+                </div>
+    
+                <nav id="navBar">
+                    <ul>
+                        <i class="fas fa-times" id="close"></i>
+                        <li><a href="./index.html" class="B">Home</a></li>
+                        <li><a href="./about.html" class="B">About Us</a></li>
+                        <li><a href="" class="B">Shop</a></li>
+                        <li><a href="" class="B">Contact Us</a></li>
+                        <li><a href="" class="B">Blog</a></li>
+                    </ul>
+                </nav>
+    
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fas fa-bars" id="menu-btn"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero">
+            <img src="./Ellipse 134.png"alt=""><p><h1>Our vision is to give everyone <br>easy access to anything in <br> their city</h1></p>
+        </div>
+    <div class="section">
+        <div class="container">
+            <img src="./Ellipse 136.png" alt="">
+        </div>
+        <div class="text">
+            <h2> We are Jeun Dada</h2>
+             <p class="jeun">Welcome to Jeun Dada, the platform that <br> seamlessly connects customers, vendors, and <br> riders. Our journey is driven by a passion for <br> solving problems and tackling challenges others <br> deem impossible.</p>
+        </div>
+    </div>
+    <div class="data">
+        <div class="blog">
+            <img src="./Rectangle 250.png" alt="">
+        </div>
+        <div class="pic">
+            <img src="./location-01.png" alt="">
+            <img src="./customer-support.png" alt="">
+            <img src="./user-group.png" alt="">
+        </div>
+        <div class="no">
+            <p>36</p>
+            <p>1347</p>
+            <p>300</p>
+        </div>
+        <div class="state">
+            <p>States</p>
+            <p>Satisfied customers</p>
+            <p>Employee</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <h2>Our Gallery</h2>
+        <img src="./Rectangle 251.png" alt class="go">
+        <img src="./Rectangle 253.png" alt="with">
+        <img src="./Rectangle 252.png" alt="why">
+        <img src="./Rectangle 254.png" alt="men">
+        <img src="./Rectangle 255.png" alt="wow">
+    </div>
+
+    <div class="client">
+        <h2>What our clients say</h2>
+        <div class="say">
+            <img src="./Ellipse 141.png" alt="">
+            <p>Thank you Jeun Dada, your platform <br>
+                has been very helpful </p>
+        </div>
+        <img src="./Group 48.png" alt="" class="button">
+    </div>
+    <footer>
+        <div class="footer">
+            <span class="jeun">
+                <img src="./Group 16.png" alt="">
+                <p>uhynmskoikedtftyyuwpomslcslcoiegt <br>gwvqyyaeklccskncknmdnvejjo<br>njjcufwijdksjksijcidfhe <br>iuehfihhfeoijlkcdo</p>
+                <img src="./image 3.png" alt="" class="visa">
+            </span>
+            <span class="quick">
+                <p>Quick Links</p>
+                <p class="tag">About Us <br> Track Order <br>Payment History</p>
+                <p class="copy">copyright | 2024 | All Rights Reserved</p>
+            </span>
+            <span class="news">
+                <p>Newsletter</p>
+                <P class="to">To get updates of our latest offers, <br>subscribe to our newsletter</P>
+                <span class="form">
+                    <input type="text">
+                    <button>subscribe</button>
+                </span>
+                <p class="privacy">Privacy | Terms & Conditions </p>
+            </span>
+        </div>
+    </footer>
+    
+<script src="./about.js"></script>    
+</body>
+</html>
